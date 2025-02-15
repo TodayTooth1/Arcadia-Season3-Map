@@ -1,27 +1,25 @@
-//Initialize Map
+// Initialize Map
 var map = L.map('map', {
-    crs: L.CRS.Simple,
+    crs: L.CRS.Simple,  // Use simple coordinate system for images
     minZoom: -2,
     maxZoom: 2
 });
 
-//Define Image Size
-
+// Define Image Size
 var imgWidth = 5000, imgHeight = 5000;
-var imageUrl = 'https://github.com/TodayTooth1/Arcadia-Season3-Map/blob/ff5b1bbba1be3e219c6a0f147ce074a2979577c4/.idea/arcadia_season3_world_map.png';
-var imageBounds = [[0,0] [imgHeight, imgWidth]];
+var imageUrl = 'https://raw.githubusercontent.com/TodayTooth1/Arcadia-Season3-Map/9e88a53a09f1bac1a48718b9051b6da8ef2c91b5/.idea/arcadia_season3_world_map.png';
+var imageBounds = [[0, 0], [imgHeight, imgWidth]];  // Corrected bounds
 
-//Add image overlay
+// Add image overlay
 L.imageOverlay(imageUrl, imageBounds).addTo(map);
 map.fitBounds(imageBounds);
 
-//Function to add markers
-function addMarker(x, y, name){
+// Function to add markers
+function addMarker(x, y, name) {
     L.marker([y, x]).addTo(map)
         .bindPopup(name);
-
 }
 
-//Example markers
-addMarker(0,0, "Spawn Point");
-addMarker(100,100, "Starter Villager");
+// Example markers
+addMarker(0, 0, "Spawn Point");
+addMarker(100, 100, "Starter Village");
