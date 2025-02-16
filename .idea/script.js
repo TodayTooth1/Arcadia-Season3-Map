@@ -7,7 +7,7 @@ var map = L.map('map', {
 
 // Define Image Size
 var imgWidth = 5000, imgHeight = 5000;
-var imageUrl = 'https://raw.githubusercontent.com/TodayTooth1/Arcadia-Season3-Map/9e88a53a09f1bac1a48718b9051b6da8ef2c91b5/.idea/arcadia_season3_world_map.png';
+var imageUrl ='https://raw.githubusercontent.com/TodayTooth1/Arcadia-Season3-Map/main/.idea/arcadia_season3_world_map.png';
 var imageBounds = [[0, 0], [imgHeight, imgWidth]];  // Corrected bounds
 
 // Add image overlay
