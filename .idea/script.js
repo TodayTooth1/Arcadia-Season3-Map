@@ -18,7 +18,7 @@ map.fitBounds(imageBounds);
 var markers = [];
 
 //Defines valid colors
-var availableColors = ["red", "blue", "green", "orange", "purple", "darkred", "darkblue"];
+var availableColors = ['red', 'darkred', 'orange', 'green', 'darkgreen', 'blue', 'purple', 'darkpurple', 'cadetblue'];
 
 //Function to create a custom marker using Awesome Markers
 function createCustomIcon(color){
